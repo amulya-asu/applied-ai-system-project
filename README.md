@@ -29,6 +29,10 @@ Some prompts to answer:
 
 You can include a simple diagram or bullet list if helpful.
 
+### System Flowchart
+
+![Music recommender flowchart](image.png)
+
 ---
 
 ## Getting Started
@@ -55,6 +59,10 @@ pip install -r requirements.txt
 python -m src.main
 ```
 
+### Example Terminal Output
+
+![Default recommender terminal output](image-1.png)
+
 ### Running Tests
 
 Run the starter tests with:
@@ -74,6 +82,14 @@ Use this section to document the experiments you ran. For example:
 - What happened when you changed the weight on genre from 2.0 to 0.5
 - What happened when you added tempo or valence to the score
 - How did your system behave for different types of users
+
+### Profile Screenshots
+
+![Silent Getaway recommendations](image-2.png)
+
+![Midnight Steel recommendations](image-3.png)
+
+![Additional recommendation screenshot](image-4.png)
 
 ---
 
