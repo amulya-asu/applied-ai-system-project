@@ -10,6 +10,16 @@ venv/
 
 # OS files
 .DS_Store
+Thumbs.db
+desktop.ini
 
 # Pytest cache
 .pytest_cache/
+.tmp/
+pytest-cache-files-*/
+
+# Coverage and local tooling
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/

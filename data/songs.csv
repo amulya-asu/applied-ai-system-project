@@ -1,21 +1,41 @@
-id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
-1,Sunrise City,Neon Echo,pop,happy,0.82,118,0.84,0.79,0.18
-2,Midnight Coding,LoRoom,lofi,chill,0.42,78,0.56,0.62,0.71
-3,Storm Runner,Voltline,rock,intense,0.91,152,0.48,0.66,0.10
-4,Library Rain,Paper Lanterns,lofi,chill,0.35,72,0.60,0.58,0.86
-5,Gym Hero,Max Pulse,pop,intense,0.93,132,0.77,0.88,0.05
-6,Spacewalk Thoughts,Orbit Bloom,ambient,chill,0.28,60,0.65,0.41,0.92
-7,Coffee Shop Stories,Slow Stereo,jazz,relaxed,0.37,90,0.71,0.54,0.89
-8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
-9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
-10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
-11,Desert Lanterns,Saffron Dune,world,calm,0.33,92,0.67,0.48,0.81
-12,Pixel Rush,Data Runner,edm,energetic,0.88,140,0.52,0.86,0.12
-13,Blue Window,Harbor Sleep,jazz,chill,0.29,74,0.63,0.47,0.94
-14,Iron Skyline,Metro Forge,metal,intense,0.95,160,0.42,0.55,0.03
-15,Soft Orbit,Cloud Harbor,dream pop,moody,0.54,102,0.58,0.71,0.40
-16,Golden Hour Trails,Maple & Pine,folk,warm,0.41,96,0.76,0.57,0.88
-17,Crystal Steps,Aria Vale,classical,peaceful,0.22,66,0.72,0.33,0.97
-18,Neon Alley Drifter,Chrome Mirage,cyberpunk,dark,0.79,128,0.38,0.69,0.15
-19,Sunset Samba,Luna Mar,jazz latin,joyful,0.73,120,0.85,0.77,0.30
-20,Quiet Signals,Northbound Static,post rock,melancholy,0.46,84,0.44,0.52,0.70
+song_id,title,artist,genre,mood,energy,tempo_bpm,valence,duration_sec
+s1,Neon Skies,Luna Harbor,pop,happy,0.82,120,0.88,210
+s2,Midnight Echo,Velvet Phase,indie,dreamy,0.45,98,0.52,230
+s3,Pulse Runner,Axis Drive,edm,intense,0.93,140,0.67,195
+s4,Golden Hourglass,Solar Tide,pop,uplifting,0.78,115,0.81,205
+s5,Quiet Lanterns,Moss & Echo,lofi,calm,0.22,72,0.48,180
+s6,Crimson Drift,Nova Fable,rock,intense,0.88,132,0.62,215
+s7,Velour Nights,Blue Static,jazz,melancholic,0.35,85,0.41,240
+s8,Sunset Drive,Mar Azul,latin,happy,0.76,118,0.85,200
+s9,Glass Horizon,Neon Orchard,indie,dreamy,0.51,102,0.57,225
+s10,Turbo Steps,Beat Circuit,edm,confident,0.91,138,0.73,190
+s11,Paper Planes II,Skythread,pop,uplifting,0.69,112,0.79,210
+s12,Deep Focus Room,Soft Ledger,lofi,calm,0.18,68,0.46,175
+s13,Street Mirage,Rhythm Guild,hip_hop,confident,0.74,95,0.71,205
+s14,Static Bloom,Iron Petal,rock,melancholic,0.67,128,0.44,220
+s15,Azure Waltz,Quiet Meridian,jazz,dreamy,0.33,90,0.55,250
+s16,Fireline Dash,Vector Rush,edm,intense,0.95,145,0.69,185
+s17,Soft Rain Letters,Willow Code,indie,calm,0.29,78,0.49,235
+s18,Copper Sunrise,Mar Azul,latin,uplifting,0.73,116,0.83,210
+s19,Back Alley Pulse,Rhythm Guild,hip_hop,intense,0.81,100,0.64,200
+s20,Open Highway,Axis Drive,rock,confident,0.84,130,0.76,215
+s21,Cloud Tea,Moss & Echo,lofi,calm,0.21,70,0.47,190
+s22,Starlight Avenue,Luna Harbor,pop,dreamy,0.58,108,0.66,205
+s23,Velvet Circuit,Beat Circuit,edm,confident,0.89,136,0.74,195
+s24,City Lanterns,Velvet Phase,indie,melancholic,0.49,96,0.42,225
+s25,Golden Breeze,Solar Tide,pop,happy,0.77,118,0.87,210
+s26,Midnight Salsa,Mar Azul,latin,intense,0.85,124,0.78,205
+s27,Ink & Rhythm,Rhythm Guild,hip_hop,confident,0.72,92,0.68,215
+s28,Blue Ember,Iron Petal,rock,dreamy,0.61,110,0.53,230
+s29,Quiet Coffee,Soft Ledger,lofi,calm,0.19,66,0.45,185
+s30,Silver Steps,Quiet Meridian,jazz,calm,0.37,88,0.51,245
+s31,Flash Drive Love,Neon Orchard,indie,happy,0.66,104,0.77,205
+s32,Ultra Motion,Vector Rush,edm,intense,0.96,148,0.72,180
+s33,Golden Streets,Skythread,pop,uplifting,0.74,114,0.82,210
+s34,Shadow Verse,Velvet Phase,indie,melancholic,0.44,94,0.39,220
+s35,Rush Hour Glow,Axis Drive,rock,confident,0.87,134,0.75,210
+s36,Driftwood Dreams,Moss & Echo,lofi,dreamy,0.25,74,0.5,200
+s37,Neon Tango,Mar Azul,latin,confident,0.8,122,0.79,210
+s38,Night Cipher,Rhythm Guild,hip_hop,intense,0.83,101,0.63,205
+s39,Crystal Loop,Soft Ledger,lofi,calm,0.2,69,0.46,175
+s40,Amber Horizon,Luna Harbor,pop,dreamy,0.57,106,0.65,215

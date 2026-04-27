@@ -1,0 +1,29 @@
+recommendation_id,from_user_id,to_user_id,song_id,anonymous,message,context_tag,listened
+r1,u1,u2,s5,false,this is perfect for focus,study,true
+r2,u2,u1,s22,false,you might like this vibe,chill,true
+r3,u3,u1,s10,false,try this at the gym,gym,true
+r4,u4,u3,s20,false,road trip anthem,road_trip,true
+r5,u5,u2,s29,true,calm tune for you,study,true
+r6,u6,u4,s8,false,summer vibes,road_trip,true
+r7,u7,u5,s24,false,this one hits late,late_night,false
+r8,u8,u3,s32,false,high energy boost,gym,true
+r9,u1,u4,s33,false,feel good track,chill,true
+r10,u2,u7,s9,false,soft indie pick,late_night,true
+r11,u3,u8,s19,false,heavy beat,gym,true
+r12,u4,u6,s25,false,you'll love this,chill,true
+r13,u5,u7,s30,true,smooth jazz vibes,late_night,false
+r14,u6,u5,s18,false,relaxing but bright,chill,true
+r15,u7,u2,s17,false,perfect study song,study,true
+r16,u8,u6,s23,false,party starter,road_trip,true
+r17,u1,u3,s3,false,energy overload,gym,true
+r18,u2,u5,s21,false,super chill,study,true
+r19,u3,u4,s35,false,drive fast song,road_trip,true
+r20,u4,u1,s11,false,this fits your taste,chill,true
+r21,u5,u2,s12,true,background focus,study,false
+r22,u6,u8,s26,false,latin energy,party,true
+r23,u7,u1,s31,false,light and fun,chill,true
+r24,u8,u7,s38,false,dark vibes,late_night,false
+r25,u1,u6,s4,false,feel good hit,chill,true
+r26,u2,u9,s9,false,starting you off with an indie favorite,onboarding,false
+r27,u5,u9,s29,true,quiet pick for your first week,onboarding,false
+r28,u7,u9,s17,false,this matches your calm side,onboarding,false

@@ -1,0 +1,10 @@
+user_id,name,preferred_genres,preferred_moods,energy_preference,tempo_preference,valence_preference,invited_by,onboarding_status
+u1,Ava,pop|edm,uplifting|happy,0.8,125,0.8,,established
+u2,Noah,lofi|indie,calm|dreamy,0.3,80,0.5,,established
+u3,Mia,hip_hop|edm,confident|intense,0.9,135,0.7,,established
+u4,Liam,rock|pop,confident|uplifting,0.75,120,0.75,,established
+u5,Emma,jazz|lofi,calm|melancholic,0.35,85,0.45,,established
+u6,Lucas,latin|pop,happy|uplifting,0.7,118,0.85,,established
+u7,Sophia,indie|rock,dreamy|melancholic,0.5,100,0.55,,established
+u8,Ethan,edm|hip_hop,intense|confident,0.92,140,0.7,,established
+u9,Zara,indie|lofi|pop,calm|dreamy,0.4,92,0.58,u2,new

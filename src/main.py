@@ -1,46 +1,54 @@
-"""
-Command line runner for the Music Recommender Simulation.
+from __future__ import annotations
 
-This file helps you quickly run and test your recommender.
-
-You will implement the functions in recommender.py:
-- load_songs
-- score_song
-- recommend_songs
-"""
-
-from pathlib import Path
+import logging
 
 try:
-    from .recommender import load_songs, recommend_songs
+    from .recommender import (
+        SocialRecommender,
+        build_demo_report,
+        default_data_dir,
+        load_social_music_data,
+        run_reliability_checks,
+        summarize_user_analytics,
+    )
 except ImportError:
-    from recommender import load_songs, recommend_songs
+    from recommender import (
+        SocialRecommender,
+        build_demo_report,
+        default_data_dir,
+        load_social_music_data,
+        run_reliability_checks,
+        summarize_user_analytics,
+    )
+
+
+logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s")
 
 
 def main() -> None:
-    data_path = Path(__file__).resolve().parents[1] / "data" / "songs.csv"
-    songs = load_songs(str(data_path))
-    print(f"Loaded songs: {len(songs)}")
-    user_profiles = {
-        "Dance on Beat": {"genre": "edm", "mood": "energetic", "energy": 0.9},
-        "Silent Getaway": {"genre": "ambient", "mood": "chill", "energy": 0.3},
-        "Midnight Steel": {"genre": "metal", "mood": "intense", "energy": 0.95},
-    }
+    data = load_social_music_data(default_data_dir())
+    recommender = SocialRecommender(data)
 
-    for profile_name, user_prefs in user_profiles.items():
-        recommendations = recommend_songs(user_prefs, songs, k=5)
+    demo_users = ["u1", "u9"]
+    for user_id in demo_users:
+        recommendations = recommender.recommend_for_user(user_id, k=5)
+        print("=" * 72)
+        print(build_demo_report(user_id, data, recommendations))
+        print()
 
-        print(f"\n=== {profile_name} ===\n")
-        for index, rec in enumerate(recommendations, start=1):
-            song, score, explanation = rec
-            reasons = explanation.split("; ")
+        analytics = summarize_user_analytics(data, user_id)
+        print(
+            "Analytics: sent={sent_count}, successful={successful_count}, "
+            "success_rate={success_rate}, best_context={best_context}".format(**analytics)
+        )
+        print()
 
-            print(f"[{index}] {song['title']}")
-            print(f"    Score  : {score:.2f}")
-            print("    Reasons:")
-            for reason in reasons:
-                print(f"    - {reason}")
-            print()
+    reliability = run_reliability_checks(data)
+    print("=" * 72)
+    print(f"Reliability checks passed: {reliability['passed']} / {reliability['total']}")
+    for label, passed in reliability["checks"]:
+        status = "PASS" if passed else "FAIL"
+        print(f"- [{status}] {label}")
 
 
 if __name__ == "__main__":
