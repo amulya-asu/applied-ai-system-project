@@ -14,6 +14,18 @@ For new users, the system falls back to friend favorites and direct friend recom
 
 Real recommender systems rarely rely on one signal. They blend personal taste, past behavior, and social context. This project simulates that idea in a small, explainable Python system and shows how testing can make recommendation behavior more trustworthy.
 
+## Demo Walkthrough
+
+🎥 **Watch the system in action:** [Loom Demo Video](YOUR_LOOM_LINK_HERE)
+
+The demo shows:
+- Existing user flow (Ava with established listening history)
+- New user onboarding flow (Zara as a cold-start invite)
+- Side-by-side comparison of both recommendation modes
+- Reliability checks passing (4/4 tests)
+
+**Alternative:** See screenshots in [assets/demo-screenshots/](assets/demo-screenshots/) folder.
+
 ## Required AI Feature
 
 This project uses a `Reliability or Testing System` as its required applied AI feature.
@@ -41,7 +53,7 @@ After ranking songs, the system generates short explanations and then runs relia
 
 ### System Diagram
 
-![System architecture](User%20Recommendation%20Profile-2026-04-27-055741.png)
+![System architecture](assets/system-architecture.png)
 
 ## How The System Works
 
@@ -117,7 +129,13 @@ On Windows:
 pip install -r requirements.txt
 ```
 
-4. Run the app:
+4. Run the Streamlit UI:
+
+```bash
+streamlit run streamlit_app.py
+```
+
+5. Optional: run the CLI demo:
 
 ```bash
 python -m src.main
@@ -131,7 +149,7 @@ pytest
 
 ## Sample Interactions
 
-### Example 1: Established User
+### Example 1: Established User in the UI
 
 Input profile:
 - `Ava (u1)`
@@ -150,7 +168,7 @@ Why this is interesting:
 - the top results match Ava's preferred genre and mood
 - one recommendation is boosted by social influence from a similar friend
 
-### Example 2: New Invited User
+### Example 2: New Invited User Onboarding in the UI
 
 Input profile:
 - `Zara (u9)`
@@ -170,6 +188,7 @@ Why this is interesting:
 - Zara is handled in cold-start mode
 - the system uses starter preferences plus friend favorites and social recommendations
 - one result is influenced by an anonymous recommendation
+- the Streamlit onboarding view shows the join path from invite to recommendation output
 
 ### Example 3: Reliability Summary
 
