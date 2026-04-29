@@ -16,15 +16,33 @@ Real recommender systems rarely rely on one signal. They blend personal taste, p
 
 ## Demo Walkthrough
 
-🎥 **Watch the system in action:** [Loom Demo Video](YOUR_LOOM_LINK_HERE)
+Watch the system in action: [Loom Demo Video](https://www.loom.com/share/9e618cba11474a4a836c5c4d815c6392)
 
-The demo shows:
-- Existing user flow (Ava with established listening history)
-- New user onboarding flow (Zara as a cold-start invite)
-- Side-by-side comparison of both recommendation modes
-- Reliability checks passing (4/4 tests)
+The demo walkthrough shows:
+- **Welcome screen**: choose the existing-user or new-user experience
+- **Existing user flow**: Ava receives personalized recommendations based on profile and history
+- **New user onboarding flow**: Zara joins through the invite-only path and gets cold-start recommendations
+- **Step-by-step journey**: accept invite -> set preferences -> connect with friends -> get recommendations
+- **Reliability checks**: integrated testing showing the system passes 4 out of 4 checks
 
-**Alternative:** See screenshots in [assets/demo-screenshots/](assets/demo-screenshots/) folder.
+Interactive demo:
+- Run `streamlit run streamlit_app_enhanced.py` for the guided walkthrough UI
+- Run `streamlit run streamlit_app.py` for the simpler comparison UI
+- See [DEMO_GUIDE.md](DEMO_GUIDE.md) for detailed walkthrough instructions
+
+### Demo Screenshots
+
+**Initial page**
+
+![Initial page](imgs/Initial_Page.png)
+
+**Existing user recommendations: Ava**
+
+![Ava recommendation profile](imgs/Ava.png)
+
+**New user onboarding recommendations: Zara**
+
+![Zara recommendation profile](imgs/Zara.png)
 
 ## Required AI Feature
 
@@ -85,20 +103,28 @@ The final output includes:
 
 ```text
 applied-ai-system-project/
-├── data/
-│   ├── songs.csv
-│   ├── users.csv
-│   ├── friendships.csv
-│   ├── recommendations.csv
-│   └── listening_history.csv
-├── src/
-│   ├── main.py
-│   └── recommender.py
-├── tests/
-│   └── test_recommender.py
-├── README.md
-├── model_card.md
-└── requirements.txt
+|-- data/
+|   |-- songs.csv
+|   |-- users.csv
+|   |-- friendships.csv
+|   |-- recommendations.csv
+|   `-- listening_history.csv
+|-- imgs/
+|   |-- Initial_Page.png
+|   |-- Ava.png
+|   `-- Zara.png
+|-- assets/
+|   `-- system-architecture.png
+|-- src/
+|   |-- main.py
+|   `-- recommender.py
+|-- tests/
+|   `-- test_recommender.py
+|-- streamlit_app.py
+|-- streamlit_app_enhanced.py
+|-- README.md
+|-- model_card.md
+`-- requirements.txt
 ```
 
 ## Getting Started
@@ -129,13 +155,19 @@ On Windows:
 pip install -r requirements.txt
 ```
 
-4. Run the Streamlit UI:
+4. Run the enhanced Streamlit demo UI:
+
+```bash
+streamlit run streamlit_app_enhanced.py
+```
+
+5. Optional: run the original comparison UI:
 
 ```bash
 streamlit run streamlit_app.py
 ```
 
-5. Optional: run the CLI demo:
+6. Optional: run the CLI demo:
 
 ```bash
 python -m src.main
@@ -144,7 +176,13 @@ python -m src.main
 ### Run Tests
 
 ```bash
-pytest
+python -m pytest tests/
+```
+
+For verbose output:
+
+```bash
+python -m pytest tests/ -v
 ```
 
 ## Sample Interactions
